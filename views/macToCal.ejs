@@ -1,0 +1,64 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Macro converter! </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+      input[type="text"]::placeholder {
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section class="jumbotron text-center bg-success">
+
+      <h1> <strong>Macro Math</strong> </h1>
+
+    </section>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+
+    <p> Enter your macro split and let the magic happen! </p>
+
+    <form  action="/macros-to-calories" method="post">
+      <input type="text" name="carbs" placeholder="<%= carbsTemplate %>">
+      <input type="text" name="proteins" placeholder="<%= proteinsTemplate %>">
+      <input type="text" name="fats" placeholder="<%= fatsTemplate %>">
+      <button class="btn btn-md btn-outline-success" type="submit" name="submit">Convert!</button>
+    </form>
+
+    <br>
+    <br>
+
+    <h3>Total Calories:</h3>
+    <input type="text" name="calories" value="<%= caloriesTemplate %>">
+
+    <br>
+    <br>
+
+
+    <form  action="/resetMacToCal" method="post">
+
+      <button class="btn btn-lg btn-outline-success" type="submit" name="submit">Recalculate!</button>
+
+    </form>
+
+    <form  action="/" method="get">
+      <button class="btn btn-lg btn-outline-success" type="submit" name="submit">Return to landing page!</button>
+    </form>
+
+    <br>
+    <br>
+
+    <p>Thank you for using my app!</p>
+    <p>Follow me on IG <a href="http://www.instagram.com/codewithshreya">@codewithshreya</a></p>
+
+  </div>
+</section>
+
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Macro converter! </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <section class="jumbotron text-center bg-success">
+
+      <h1> <strong>Macro Math</strong> </h1>
+
+    </section>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+
+    <h3>Lifestyle chosen: <%= lifestyleTemplate %>  </h3>
+
+    <h3>Total Calories: <%= totCaloriesTemplate %> </h3>
+
+    <br>
+    <br>
+
+    <h3>Grams protein: <%= proteinTemplate %> </h3>
+    <h3>Grams carbs: <%= carbsTemplate %> </h3>
+    <h3>Grams fats: <%= fatsTemplate %> </h3>
+
+    <br>
+    <br>
+
+
+
+    <form  action="/resetCalToMac" method="post">
+
+      <button class="btn btn-lg btn-outline-success" type="submit" name="submit">Recalculate!</button>
+
+    </form>
+
+    <form  action="/" method="get">
+      <button class="btn btn-lg btn-outline-success" type="submit" name="submit">Return to landing page!</button>
+    </form>
+
+    <br>
+
+    <p>Thank you for using my app!</p>
+    <p>Follow me on IG <a href="http://www.instagram.com/codewithshreya">@codewithshreya</a></p>
+
+
+  </div>
+  </section>
+
+
+  </body>
+</html>
